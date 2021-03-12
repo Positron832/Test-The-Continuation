@@ -1,0 +1,16 @@
+html {min-height: 100%}
+
+body {
+  min-height: 100%;
+  font-family: 'Times New Roman', serif;
+  background: /*better one later*/ linear-gradient(red, darkSlateGrey);
+  text-align: center;
+  font-size: 62.5%;
+  color: #000;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-top: 10px;
+  background: radial-gradient(circle, #0f0, transparent);
+}
