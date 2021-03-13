@@ -15,6 +15,7 @@ function infoAppear() {
 function infoAppear2() {
   infoTxt.textContent = "See credits";
   document.body.appendChild(infoTxt);
+}
 
 function infoDissappear() {
   infoTxt.remove();
