@@ -3,7 +3,8 @@ html {min-height: 100%}
 body {
   min-height: 100%;
   font-family: 'Times New Roman', serif;
-  background: url(/images/mainBG.png);
+  background: url(/images/mainBG.png) fixed no-repeat;
+  background-size: cover;
   text-align: center;
   font-size: 62.5%;
   color: #000;
