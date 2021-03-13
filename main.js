@@ -1,6 +1,6 @@
 let startBtn = document.getElementById("startBtn");
 let credits = document.getElementById("credits");
-let title = document.querySelector("h1");
+let title = document.getElementById("menuTxt");
 
 startBtn.onmouseover = function(){infoAppear()};
 startBtn.onmouseout = function(){infoDissappear()};
@@ -22,9 +22,11 @@ function infoDissappear() {
   infoTxt.remove();
 }
 
-startBtn.onclick = function() {
+startBtn.onclick = function(){startGame()}
+
+function startGame() {
   titleMusic.pause();
-  title.remove();!(
+  title.remove();
   startBtn.remove();
   credits.remove();
   music.play();
