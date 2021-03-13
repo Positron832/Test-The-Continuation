@@ -23,3 +23,8 @@ body {
   from {color: #fff; letter-spacing: 5px;}
   to {color: #000; letter-spacing: normal;}
 }
+
+p, #infoTxt {
+  font-size: 1.4rem;
+  transform: translate(50%, 50%);
+}
