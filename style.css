@@ -29,3 +29,9 @@ p, #infoTxt {
   background: radial-gradient(circle, #fff, transparent);
   display: inline-block;
 }
+
+.btn-container button {
+  font-size: 2rem;
+  background: linear-gradient(orange, brown);
+  border: 1px #000 solid;
+}
