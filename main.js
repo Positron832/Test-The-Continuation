@@ -5,7 +5,7 @@ startBtn.onmouseout = function(){infoDissappear()};
 
 function infoAppear() {
   let infoTxt = document.createElement("p");
-  infoTxt.innerHTML = "Start the game?";
+  infoTxt.textContent= "Start the game?";
   document.body.appendChild(infoTxt);
 }
 
