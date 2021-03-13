@@ -1,5 +1,6 @@
 let startBtn = document.getElementById("startBtn");
 let credits = document.getElementById("credits");
+let title = document.querySelector("h1");
 
 startBtn.onmouseover = function(){infoAppear()};
 startBtn.onmouseout = function(){infoDissappear()};
@@ -19,4 +20,12 @@ function infoAppear2() {
 
 function infoDissappear() {
   infoTxt.remove();
+}
+
+startBtn.onclick = function() {
+  titleMusic.pause();
+  title.remove();!(
+  startBtn.remove();
+  credits.remove();
+  music.play();
 }
