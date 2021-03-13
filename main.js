@@ -1,6 +1,7 @@
 let startBtn = document.getElementById("startBtn");
 
-startBtn.onmouseover = function(){infoAppear()}
+startBtn.onmouseover = function(){infoAppear()};
+startBtn.onmouseout = functiom(){infoDissappear()};
 
 function infoAppear() {
   let infoTxt = document.createElement("p");
@@ -8,4 +9,6 @@ function infoAppear() {
   document.body.appendChild(infoTxt);
 }
 
-
+function infoDissappear() {
+  infoTxt.remove();
+}
