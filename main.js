@@ -30,5 +30,8 @@ function startGame() {
   title.remove();
   startBtn.remove();
   credits.remove();
+  document.getElementsByClassName("btn-container").remove();
+  
   music.play();
+
 }
