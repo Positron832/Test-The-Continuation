@@ -1,7 +1,7 @@
 let startBtn = document.getElementById("startBtn");
 
 startBtn.onmouseover = function(){infoAppear()};
-startBtn.onmouseout = functiom(){infoDissappear()};
+startBtn.onmouseout = function(){infoDissappear()};
 
 function infoAppear() {
   let infoTxt = document.createElement("p");
