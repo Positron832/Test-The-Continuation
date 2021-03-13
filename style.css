@@ -26,5 +26,6 @@ body {
 
 p, #infoTxt {
   font-size: 1.4rem;
-  background: radial-gradient(circle, #000, #fff);
+  background: radial-gradient(circle, #fff, transparent);
+  display: inline-block;
 }
