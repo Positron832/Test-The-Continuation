@@ -27,7 +27,7 @@ body {
 p, #infoTxt {
   font-size: 1.4rem;
   background: radial-gradient(circle, #fff, transparent);
-  display: inline-block;
+  display: block;
 }
 
 .btn-container {
@@ -36,6 +36,7 @@ p, #infoTxt {
   border: 4px #333 solid;
   display: inline-block;
   text-align: center;
+  justify-content: center;
 }
 
 .btn-container button {
