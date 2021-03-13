@@ -14,7 +14,9 @@ body {
   font-size: 2.8rem;
   margin-top: 10px;
   background: radial-gradient(circle, #0f0, transparent);
-  animation: menuTxt 1s linear forwards;
+  animation: menuTxt 2s linear forwards;
+  color: transparent;
+  animation-delay: 1s;
 }
 
 @keyframes menuTxt {
