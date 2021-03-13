@@ -10,5 +10,5 @@ function infoAppear() {
 }
 
 function infoDissappear() {
-  infoTxt.remove();
+  startBtn.remove();
 }
