@@ -26,5 +26,5 @@ body {
 
 p, #infoTxt {
   font-size: 1.4rem;
-  transform: translate(50%, 50%);
+  background: radial-gradient(circle, #000, #fff);
 }
