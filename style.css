@@ -10,8 +10,14 @@ body {
   color: #000;
 }
 
-h1 {
+.menuTxt {
   font-size: 2.8rem;
   margin-top: 10px;
   background: radial-gradient(circle, #0f0, transparent);
+  animation: menuTxt 1s linear forwards;
+}
+
+@keyframes menuTxt {
+  from {color: #fff; letter-spacing: 5px;}
+  to {color: #000; letter-spacing: normal;}
 }
