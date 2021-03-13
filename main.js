@@ -10,5 +10,5 @@ function infoAppear() {
 }
 
 function infoDissappear() {
-  document.body.remove(infoTxt);
+  infoTxt.remove();
 }
