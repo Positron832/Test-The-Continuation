@@ -30,8 +30,19 @@ p, #infoTxt {
   display: inline-block;
 }
 
+.btn-container {
+  background: linear-gradient(grey, darkGrey);
+  padding: 5px;
+  border: 4px #333 solid;
+}
+
 .btn-container button {
   font-size: 2rem;
   background: linear-gradient(orange, brown);
-  border: 1px #000 solid;
+  border: 2px #000 solid;
+  display: block;
+}
+
+.btn-container button:hover, .btn-container-btn:focus {
+  background: linear-gradient(brown, orange);
 }
