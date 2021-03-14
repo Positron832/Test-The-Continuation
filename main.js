@@ -14,6 +14,7 @@ startBtn.onmouseover = function(){infoAppear()};
 startBtn.onmouseout = function(){infoDissappear()};
 credits.onmouseover = function(){infoAppear2()};
 credits.onmouseout = function(){infoDissappear()};
+credits.onclick = function(){showCredits()};
 let infoTxt = document.createElement("p");
 
 function infoAppear() {
@@ -24,6 +25,9 @@ function infoAppear() {
 function infoAppear2() {
   infoTxt.textContent = "See credits";
   document.body.appendChild(infoTxt);
+}
+
+function showCredits() {
   const creditsTxt = document.createElement("p")
   creditsTxt.innerHTML = "Programming....Positron832<br/>Title music......Semaphore";
   infoTxt.remove();
