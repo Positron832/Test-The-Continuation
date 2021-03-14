@@ -24,11 +24,21 @@ function infoAppear() {
 function infoAppear2() {
   infoTxt.textContent = "See credits";
   document.body.appendChild(infoTxt);
+  const creditsTxt = document.createElement("p")
+  creditsTxt.innerHTML = "Programming....Positron832<br/>Title music......Semaphore";
+  infoTxt.remove();
+  startBtn.remove();
+  credits.remove();
+  const backBtn = document.createElement("button");
+  backBtn.onclick = back();
+  document.getElementById("btn-container1").appendChild(creditsTxt);
+  document.body.appendChild(backBtn);
 }
 
 function infoDissappear() {
   infoTxt.remove();
 }
+
 
 startBtn.onclick = function(){startGame()}
 
