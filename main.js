@@ -1,7 +1,11 @@
 let startBtn = document.getElementById("startBtn");
 let credits = document.getElementById("credits");
 let title = document.getElementById("menuTxt");
-let titleMusic = document.querySelector("audio");
+let titleMusic = document.getElementById("titleMusic");
+
+document.body.onload = function() {
+  titleMusic.play();
+}
 
 startBtn.onmouseover = function(){infoAppear()};
 startBtn.onmouseout = function(){infoDissappear()};
