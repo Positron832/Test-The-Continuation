@@ -38,7 +38,7 @@ function startGame() {
   startBtn.remove();
   credits.remove();
   infoTxt.remove();
-  document.getElementsByClassName("btn-container").remove();
+  document.getElementById("btn-container1").remove();
   
   music.play();
 
