@@ -1,3 +1,5 @@
+// <[!CDATA[
+"use strict";
 let startBtn = document.getElementById("startBtn");
 let credits = document.getElementById("credits");
 let title = document.getElementById("menuTxt");
@@ -41,3 +43,4 @@ function startGame() {
   music.play();
 
 }
+// ]]>
