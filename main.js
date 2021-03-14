@@ -3,7 +3,8 @@ let credits = document.getElementById("credits");
 let title = document.getElementById("menuTxt");
 let titleMusic = document.getElementById("titleMusic");
 
-document.body.onload = function() {
+document.body.onload = function(){bodyOnload()};
+function bodyOnload() {
   titleMusic.play();
 }
 
@@ -34,6 +35,7 @@ function startGame() {
   title.remove();
   startBtn.remove();
   credits.remove();
+  infoTxt.remove();
   document.getElementsByClassName("btn-container").remove();
   
   music.play();
