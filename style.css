@@ -10,6 +10,11 @@ body {
   color: #000;
 }
 
+button {
+  font-family: 'Times New Roman', serif;
+  font-size: 2rem;
+}
+
 #menuTxt {
   font-size: 2.8rem;
   margin-top: 10px;
@@ -39,7 +44,6 @@ p, #infoTxt {
 }
 
 .btn-container button {
-  font-size: 2rem;
   background: linear-gradient(orange, brown);
   border: 2px #000 solid;
   display: block;
