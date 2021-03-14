@@ -1,3 +1,5 @@
-If you mess up the game I will find you, and I will cancel you.
-Just kiddikg.
-Still—please don't mess up my game.
+# If you want to contribute:
+* Use strict mode for JS,
+* Close tags that don't have a closing tag,
+* Write valid HTML,
+* Don't change things without my permission.
