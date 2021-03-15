@@ -5,7 +5,7 @@ let credits = document.getElementById("credits");
 let title = document.getElementById("menuTxt");
 let titleMusic = document.getElementById("titleMusic");
 
-document.querySelectorAll("audio").volume = 0.3;
+titleMusic.volume = 0.3;
 
 document.body.onload = function(){bodyOnload()};
 function bodyOnload() {
