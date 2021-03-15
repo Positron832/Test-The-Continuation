@@ -8,6 +8,7 @@ body {
   text-align: center;
   font-size: 62.5%;
   color: #000;
+  user-select: none;
 }
 
 button {
