@@ -11,6 +11,7 @@ body {
 }
 
 button {
+  color: #000;
   font-family: 'Times New Roman', serif;
   font-size: 2rem;
   background: linear-gradient(darkGreen, green);
@@ -54,4 +55,5 @@ p, #infoTxt {
 
 .btn-container button:hover, .btn-container-btn:focus {
   background: linear-gradient(brown, orange);
+  outline: none;
 }
