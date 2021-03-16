@@ -4,8 +4,9 @@ let startBtn = document.getElementById("startBtn");
 let credits = document.getElementById("credits");
 let title = document.getElementById("menuTxt");
 let titleMusic = document.getElementById("titleMusic");
+let music = document.getElementById("music");
 
-titleMusic.volume = 0.3;
+titleMusic.volume = 0.4;
 
 document.body.onload = function(){bodyOnload()};
 function bodyOnload() {
@@ -32,9 +33,9 @@ function infoAppear2() {
 function showCredits() {
   const creditsTxt = document.createElement("p")
   creditsTxt.innerHTML = "Programming....Positron832<br/>Title music......Semaphore";
-  infoTxt.remove();
+ /* infoTxt.remove();
   startBtn.remove();
-  credits.remove();
+  credits.remove(); */
   const backBtn = document.createElement("button");
   backBtn.onclick = back();
   document.getElementById("btn-container1").appendChild(creditsTxt);
