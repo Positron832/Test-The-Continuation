@@ -58,5 +58,7 @@ p, #infoTxt {
 
 .btn-container button:hover, .btn-container-btn:focus {
   background: linear-gradient(brown, orange);
+  color: #fff;
+  text-shadow: 0 0 7px #fff;
   outline: none;
 }
