@@ -1,4 +1,4 @@
-// <[!CDATA[
+// <![CDATA[
 "use strict";
 let startBtn = document.getElementById("startBtn");
 let credits = document.getElementById("credits");
