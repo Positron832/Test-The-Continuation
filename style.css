@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
+
 html {min-height: 100%}
 
 body {
   min-height: 100%;
-  font-family: 'Times New Roman', serif;
+  font-family: 'Cormorant Garamond', 'Times New Roman', serif;
   background: url(images/mainBG.png) fixed no-repeat;
   background-size: cover;
   text-align: center;
@@ -15,7 +17,7 @@ body {
 
 button {
   color: #000;
-  font-family: 'Times New Roman', serif;
+  font-family: 'Cormorant Garamond', 'Times New Roman', serif;
   font-size: 2rem;
   background: linear-gradient(darkGreen, green);
   cursor: pointer;
