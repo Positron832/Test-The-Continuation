@@ -19,6 +19,7 @@ credits.onmouseover = function(){infoAppear2()};
 credits.onmouseout = function(){infoDissappear()};
 credits.onclick = function(){showCredits()};
 let infoTxt = document.createElement("p");
+let creditsTxt = document.createElement("p")
 
 function infoAppear() {
   infoTxt.textContent= "Start the game?";
@@ -31,8 +32,7 @@ function infoAppear2() {
 }
 
 function showCredits() {
-  const creditsTxt = document.createElement("p")
-  creditsTxt.innerHTML = "Programming....Positron832<br/>Title music......Semaphore";
+  creditsTxt.innerHTML = "Programming....Positron832<br\/>Title music......Semaphore";
  /* infoTxt.remove();
   startBtn.remove();
   credits.remove(); */
