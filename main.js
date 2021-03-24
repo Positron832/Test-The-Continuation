@@ -19,7 +19,8 @@ credits.onmouseover = function(){infoAppear2()};
 credits.onmouseout = function(){infoDissappear()};
 credits.onclick = function(){showCredits()};
 let infoTxt = document.createElement("p");
-let creditsTxt = document.createElement("p")
+let creditsTxt = document.createElement("p");
+let backBtn = document.createElement("button");
 
 function infoAppear() {
   infoTxt.textContent= "Start the game?";
@@ -36,7 +37,6 @@ function showCredits() {
  /* infoTxt.remove();
   startBtn.remove();
   credits.remove(); */
-  const backBtn = document.createElement("button");
   backBtn.onclick = back();
   document.getElementById("btn-container1").appendChild(creditsTxt);
   document.body.appendChild(backBtn);
