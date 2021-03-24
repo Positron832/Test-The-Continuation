@@ -42,6 +42,13 @@ function showCredits() {
   document.body.appendChild(backBtn);
 }
 
+function hideCredits() {
+  creditsTxt.remove();
+  backBtn.remove();
+  document.body.appendChild(startBtn);
+  document.body.appendChild(credits);
+}
+
 function infoDissappear() {
   infoTxt.remove();
 }
