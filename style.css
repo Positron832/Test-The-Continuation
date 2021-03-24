@@ -8,7 +8,8 @@ body {
   text-align: center;
   font-size: 62.5%;
   color: #000;
-  -weblit-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
