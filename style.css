@@ -19,7 +19,10 @@ button {
   font-family: 'Times New Roman', serif;
   font-size: 2rem;
   background: linear-gradient(orange, brown);
+  display: block;
+  margin: 2px auto;
   cursor: pointer;
+  border: 2px #000 solid;
 }
 
 button:hover, button:focus {
@@ -54,14 +57,7 @@ p, #infoTxt {
   display: block;
   text-align: center;
   width: 400px;
-  margin 5px auto;
-}
-
-.btn-container button {
-  background: linear-gradient(orange, brown);
-  border: 2px #000 solid;
-  display: block;
-  margin: 2px auto;
+  margin: 5px auto;
 }
 
 .btn-container button:hover, .btn-container button:focus {
