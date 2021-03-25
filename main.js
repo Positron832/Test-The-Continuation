@@ -37,7 +37,7 @@ function showCredits() {
  /* infoTxt.remove();
   startBtn.remove();
   credits.remove(); */
-  backBtn.onclick = back();
+  backBtn.onclick = hideCredits();
   document.getElementById("btn-container1").appendChild(creditsTxt);
   document.body.appendChild(backBtn);
 }
