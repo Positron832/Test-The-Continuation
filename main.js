@@ -33,12 +33,12 @@ function infoAppear2() {
 }
 
 function showCredits() {
-  creditsTxt.innerHTML = "Programming....Positron832<br\/>Title music......Semaphore";
-  infoTxt.remove();
   startBtn.remove();
   credits.remove();
-  backBtn.onclick = hideCredits();
+  infoTxt.remove();
   backBtn.textContent = "Back";
+  backBtn.onclick = hideCredits();
+  creditsTxt.innerHTML = "Programming....Positron832<br\/>Title music......Semaphore";
   document.getElementById("btn-container1").appendChild(creditsTxt);
   document.body.appendChild(backBtn);
 }
