@@ -51,8 +51,10 @@ p, #infoTxt {
   background: linear-gradient(grey, darkGrey);
   padding: 5px;
   border: 4px #333 solid;
-  display: inline-block;
+  display: block;
   text-align: center;
+  width: 400px;
+  margin 5px auto;
 }
 
 .btn-container button {
