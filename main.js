@@ -34,9 +34,9 @@ function infoAppear2() {
 
 function showCredits() {
   creditsTxt.innerHTML = "Programming....Positron832<br\/>Title music......Semaphore";
- /* infoTxt.remove();
+  infoTxt.remove();
   startBtn.remove();
-  credits.remove(); */
+  credits.remove();
   backBtn.onclick = hideCredits();
   document.getElementById("btn-container1").appendChild(creditsTxt);
   document.body.appendChild(backBtn);
