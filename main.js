@@ -38,6 +38,7 @@ function showCredits() {
   startBtn.remove();
   credits.remove();
   backBtn.onclick = hideCredits();
+  backBtn.textContent = "Back";
   document.getElementById("btn-container1").appendChild(creditsTxt);
   document.body.appendChild(backBtn);
 }
@@ -63,8 +64,6 @@ function startGame() {
   credits.remove();
   infoTxt.remove();
   document.getElementById("btn-container1").remove();
-  
   music.play();
-
 }
 // ]]>
