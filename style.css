@@ -18,8 +18,13 @@ button {
   color: #000;
   font-family: 'Times New Roman', serif;
   font-size: 2rem;
-  background: linear-gradient(darkGreen, green);
+  background: linear-gradient(orange, brown);
   cursor: pointer;
+}
+
+button:hover, button:focus {
+  background: linear-gradient(orange, darkRed);
+  outline: 0;
 }
 
 #menuTxt {
@@ -58,8 +63,7 @@ p, #infoTxt {
 }
 
 .btn-container button:hover, .btn-container button:focus {
-  background: linear-gradient(orange, darkRed);
   color: snow;
   text-shadow: 0 0 7px #fff;
-  outline: none;
+  outline: 0;
 }
