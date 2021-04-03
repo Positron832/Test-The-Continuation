@@ -8,31 +8,28 @@ let music = document.getElementById("music");
 
 titleMusic.volume = 0.4;
 
-document.body.onload = function(){bodyOnload()};
-function bodyOnload() {
+document.body.onload = function() {
   titleMusic.play();
 }
 
-startBtn.onmouseover = function(){infoAppear()};
-startBtn.onmouseout = function(){infoDissappear()};
-credits.onmouseover = function(){infoAppear2()};
-credits.onmouseout = function(){infoDissappear()};
-credits.onclick = function(){showCredits()};
-let infoTxt = document.createElement("p");
-let creditsTxt = document.createElement("p");
-let backBtn = document.createElement("button");
-
-function infoAppear() {
+startBtn.onmouseover = function() {
   infoTxt.textContent= "Start the game?";
   document.body.appendChild(infoTxt);
 }
 
-function infoAppear2() {
+startBtn.onmouseout = function() {
+  infoTxt.remove();
+}
+credits.onmouseout = function() {
+  infoTxt.remove();
+}
+
+credits.onmouseover = function() {
   infoTxt.textContent = "See credits";
   document.body.appendChild(infoTxt);
 }
 
-function showCredits() {
+credits.onclick = function() {
   startBtn.remove();
   credits.remove();
   infoTxt.remove();
@@ -43,17 +40,16 @@ function showCredits() {
   document.body.appendChild(backBtn);
 }
 
+let infoTxt = document.createElement("p");
+let creditsTxt = document.createElement("p");
+let backBtn = document.createElement("button");
+
 function hideCredits() {
   creditsTxt.remove();
   backBtn.remove();
   document.body.appendChild(startBtn);
   document.body.appendChild(credits);
 }
-
-function infoDissappear() {
-  infoTxt.remove();
-}
-
 
 startBtn.onclick = function(){startGame()}
 
