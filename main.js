@@ -34,7 +34,12 @@ credits.onclick = function() {
   credits.remove();
   infoTxt.remove();
   backBtn.textContent = "Back";
-  backBtn.onclick = hideCredits();
+  backBtn.onclick = function() {
+    creditsTxt.remove();
+    backBtn.remove();
+    document.body.appendChild(startBtn);
+    document.body.appendChild(credits);
+  }
   creditsTxt.innerHTML = "Programming....Positron832<br\/>Title music......Semaphore";
   document.getElementById("btn-container1").appendChild(creditsTxt);
   document.body.appendChild(backBtn);
@@ -43,14 +48,7 @@ credits.onclick = function() {
 let infoTxt = document.createElement("p");
 let creditsTxt = document.createElement("p");
 let backBtn = document.createElement("button");
-
-function hideCredits() {
-  creditsTxt.remove();
-  backBtn.remove();
-  document.body.appendChild(startBtn);
-  document.body.appendChild(credits);
-}
-
+  
 startBtn.onclick = function(){startGame()}
 
 function startGame() {
