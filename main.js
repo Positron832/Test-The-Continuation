@@ -5,7 +5,6 @@ let credits = document.getElementById("credits");
 let title = document.getElementById("menuTxt");
 let titleMusic = document.getElementById("titleMusic");
 let music = document.getElementById("music");
-let btnContainer1 = document.getElementById("btn-container1");
 
 titleMusic.volume = 0.4;
 
@@ -38,11 +37,11 @@ credits.onclick = function() {
   backBtn.onclick = function() {
     creditsTxt.remove();
     backBtn.remove();
-    document.btnContainer1.appendChild(startBtn);
-    document.btnContainer1.appendChild(credits);
+    document.document.getElementById("btn-container1").appendChild(startBtn);
+    document.document.getElementById("btn-container1").appendChild(credits);
   }
   creditsTxt.innerHTML = "Programming....Positron832<br\/>Title music......Semaphore";
-  document.btnContainer1.appendChild(creditsTxt);
+  document.document.getElementById("btn-container1").appendChild(creditsTxt);
   document.body.appendChild(backBtn);
 }
 
@@ -58,7 +57,7 @@ function startGame() {
   startBtn.remove();
   credits.remove();
   infoTxt.remove();
-  btnContainer1.remove();
+  document.getElementById("btn-container1").remove();
   music.play();
 }
 // ]]>
