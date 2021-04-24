@@ -41,7 +41,7 @@ credits.onclick = function() {
     document.getElementById("btn-container1").appendChild(credits);
   }
   creditsTxt.innerHTML = "Programming....Positron832<br\/>Title music......Semaphore";
-  document.document.getElementById("btn-container1").appendChild(creditsTxt);
+  document.getElementById("btn-container1").appendChild(creditsTxt);
   document.body.appendChild(backBtn);
 }
 
