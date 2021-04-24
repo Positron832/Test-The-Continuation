@@ -8,21 +8,15 @@ const music = document.getElementById("music");
 
 titleMusic.volume = 0.4;
 
-document.body.onload = function() {
-  titleMusic.play();
-}
+document.body.onload = function() {titleMusic.play()}
 
 startBtn.onmouseover = function() {
   infoTxt.textContent= "Start the game?";
   document.body.appendChild(infoTxt);
 }
 
-startBtn.onmouseout = function() {
-  infoTxt.remove();
-}
-credits.onmouseout = function() {
-  infoTxt.remove();
-}
+startBtn.onmouseout = function() {infoTxt.remove()}
+credits.onmouseout = function() {infoTxt.remove()}
 
 credits.onmouseover = function() {
   infoTxt.textContent = "See credits";
@@ -45,13 +39,11 @@ credits.onclick = function() {
   document.body.appendChild(backBtn);
 }
 
-let infoTxt = document.createElement("p");
-let creditsTxt = document.createElement("p");
-let backBtn = document.createElement("button");
+const infoTxt = document.createElement("p");
+const creditsTxt = document.createElement("p");
+const backBtn = document.createElement("button");
   
-startBtn.onclick = function(){startGame()}
-
-function startGame() {
+startBtn.onclick = function() {
   titleMusic.pause();
   title.remove();
   startBtn.remove();
@@ -59,5 +51,7 @@ function startGame() {
   infoTxt.remove();
   document.getElementById("btn-container1").remove();
   music.play();
+  const text1 = document.createElement("p");
+  document.body.appendChild(text1);
 }
 // ]]>
