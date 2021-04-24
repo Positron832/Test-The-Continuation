@@ -1,10 +1,10 @@
 // <![CDATA[
 "use strict";
-let startBtn = document.getElementById("startBtn");
-let credits = document.getElementById("credits");
-let title = document.getElementById("menuTxt");
-let titleMusic = document.getElementById("titleMusic");
-let music = document.getElementById("music");
+const startBtn = document.getElementById("startBtn");
+const credits = document.getElementById("credits");
+const title = document.getElementById("menuTxt");
+const titleMusic = document.getElementById("titleMusic");
+const music = document.getElementById("music");
 
 titleMusic.volume = 0.4;
 
@@ -37,8 +37,8 @@ credits.onclick = function() {
   backBtn.onclick = function() {
     creditsTxt.remove();
     backBtn.remove();
-    document.document.getElementById("btn-container1").appendChild(startBtn);
-    document.document.getElementById("btn-container1").appendChild(credits);
+    document.getElementById("btn-container1").appendChild(startBtn);
+    document.getElementById("btn-container1").appendChild(credits);
   }
   creditsTxt.innerHTML = "Programming....Positron832<br\/>Title music......Semaphore";
   document.document.getElementById("btn-container1").appendChild(creditsTxt);
