@@ -42,16 +42,18 @@ credits.onclick = function() {
 const infoTxt = document.createElement("p");
 const creditsTxt = document.createElement("p");
 const backBtn = document.createElement("button");
+
+const text1 = document.createElement("p");
   
 startBtn.onclick = function() {
   titleMusic.pause();
+  titleMusic.currentTime = 0;
   title.remove();
   startBtn.remove();
   credits.remove();
   infoTxt.remove();
   document.getElementById("btn-container1").remove();
   music.play();
-  const text1 = document.createElement("p");
   document.body.appendChild(text1);
 }
 // ]]>
